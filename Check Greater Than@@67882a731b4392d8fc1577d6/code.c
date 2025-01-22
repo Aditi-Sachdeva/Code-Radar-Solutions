@@ -3,7 +3,7 @@
 int main() {
     int a,b;
     scanf("%d %d",&a,&b);
-    char z[] = a>b?True:False;
+    char z[] = a>b?printf("True"):printf("False");
     printf("%s",z);
     return 0;
 }

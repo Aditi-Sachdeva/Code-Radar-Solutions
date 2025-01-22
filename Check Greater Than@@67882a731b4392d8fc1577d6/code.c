@@ -3,7 +3,11 @@
 int main() {
     int a,b;
     scanf("%d %d",&a,&b);
-    char z[6] = a>b?printf("True"):printf("False");
-    printf("%s",z);
+    if(a>b){
+        printf("True");
+    }
+    else{
+        printf("False");
+    }
     return 0;
 }

@@ -2,11 +2,14 @@
 
 int main() {
     int a;
-    if(a>=0){
+    if(a>0){
         printf("Positive");
     }
-    else{
+    elif(a<0){
         printf("Negative");
+    }
+    else{
+        printf("Zero");
     }
     return 0;
 }

@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    if a,b;
+    int a,b;
     scanf("%d %d",&a,&b);
     if(a==b){
         printf("Equal");

@@ -10,7 +10,7 @@ int main() {
     else if(ch>='0' && ch<='9'){
         printf("Digit");
     }
-    else if(('b'<=ch<='d') || ('f'<=ch<='h')  || ('j'<=ch<='n') || ('p'<=ch<='t')|| ('v'<=ch<= 'z') || ('B'<=ch<='D') || ('F'<=ch<='H') || ('J'<=ch<='N') ||('P' <=ch<='T') || ('V'<=ch<='Z') ){
+    else if(ch>='b' && ch<='z' && ch != 'a' && ch!='e' && ch!='i' && ch!='e' && ch=='o' && ch!='u' && ch>='B' && ch<='Z' && ch!='A' && ch!='E') && ch!='I' && ch!='0' && ch!='U'{
        printf("Consonant") ;
     }
     else{

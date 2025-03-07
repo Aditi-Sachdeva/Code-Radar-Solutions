@@ -3,6 +3,7 @@ void printPrimesInRange(int a, int b){
         for(int i=2;i<=num;i++){
             if(num%i==0){
                 printf("%d ",num);
+                break;
             }
             else{
                 printf("No prime numbers");

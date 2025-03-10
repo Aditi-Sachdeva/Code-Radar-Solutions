@@ -1,12 +1,18 @@
 #include <stdio.h>
 int main() {
-    int num, pos = 1;
+    int num;
     scanf("%d", &num);
-    while ((num & 1) == 0) {
+    if (num == 0) {
+        printf("-1\n");
+    } else {
+        int position = 0;
+        while ((num & 1) == 0) {
             num >>= 1; 
-            pos++;
+            position++;
         }
-    printf("%d", pos);
+        printf("%d\n", position);
+    }
     return 0;
 }
+
 

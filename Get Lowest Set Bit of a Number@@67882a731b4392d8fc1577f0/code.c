@@ -1,14 +1,16 @@
 #include <stdio.h>
-#include <math.h>
 int main() {
-    int num;
+    int num, pos = 1;
     scanf("%d", &num);
-    if (num == 0) {
+    if(num == 0) {
         printf("0");
     } else {
-        int position = log2(num & -num) + 1;
-        printf("%d", position);
+        while ((num & 1) == 0) {
+            num >>= 1; 
+            pos++;
+        }
+        printf("%d", pos);
     }
-
     return 0;
 }
+

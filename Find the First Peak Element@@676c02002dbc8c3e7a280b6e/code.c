@@ -1,13 +1,23 @@
 #include <stdio.h>
 void peakElement(int arr[], int n){
-    int peak = arr[0];
+    if(n==1){
+        printf("%d",arr[0])
+        return;
+    }
+    if(arr[0] > arr[1]){
+        printf("%d",arr[0]);
+        return;
+    }
     for(int i=1; i<n-1;i++){
-        if(peak < arr[i] && arr[i] > arr[i+1]){
-            peak = arr[i];
+        if(arr[i] > arr[a-1] && arr[i] > arr[i+1]){
+            printf("%d",arr[i]);
             return;
         }
     }
-    printf("%d",peak);
+    if(arr[n-1] > arr[n-2]){
+        printf("%d",arr[n-1]);
+        return;
+    }
 }
 int main(){
     int n;

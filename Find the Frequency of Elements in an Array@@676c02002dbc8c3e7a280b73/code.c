@@ -1,7 +1,7 @@
 #include <stdio.h>
 void freq(int arr[],int n){
-    int freq[1000];
-    for(int i=0;i<n;i++){
+    int freq[1000] = {0};
+    if(arr[i] < 1000){
         freq[arr[i]]++;
     }
     for(int i=0;i<n;i++){

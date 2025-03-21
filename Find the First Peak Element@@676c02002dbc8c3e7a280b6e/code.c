@@ -1,7 +1,7 @@
 #include <stdio.h>
 void peakElement(int arr[], int n){
     if(n==1){
-        printf("%d",arr[0])
+        printf("%d",arr[0]);
         return;
     }
     if(arr[0] > arr[1]){
@@ -9,7 +9,7 @@ void peakElement(int arr[], int n){
         return;
     }
     for(int i=1; i<n-1;i++){
-        if(arr[i] > arr[a-1] && arr[i] > arr[i+1]){
+        if(arr[i] > arr[i-1] && arr[i] > arr[i+1]){
             printf("%d",arr[i]);
             return;
         }

@@ -1,12 +1,12 @@
 #include <stdio.h>
 void freq(int arr[],int n){
-    int freq[n];
+    int freq[1000];
     for(int i=0;i<n;i++){
         freq[arr[i]]++;
     }
     for(int i=0;i<n;i++){
         if(freq[arr[i]] > 0){
-            printf("%d %d",arr[i],freq[arr[i]]);
+            printf("%d %d\n",arr[i],freq[arr[i]]);
             freq[arr[i]] = 0;
         }
     }

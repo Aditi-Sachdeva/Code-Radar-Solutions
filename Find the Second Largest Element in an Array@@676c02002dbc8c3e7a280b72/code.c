@@ -15,8 +15,7 @@ int secondLargest(int arr[], int n){
             second = arr[i];
         }
     }
-    return second;
-    // return second>INT_MIN?second:-1;
+    return second>INT_MIN?second:-1;
 }
 int main(){
     int n;

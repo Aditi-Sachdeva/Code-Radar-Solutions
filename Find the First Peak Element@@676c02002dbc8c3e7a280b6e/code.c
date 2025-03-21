@@ -4,6 +4,7 @@ void peakElement(int arr[], int n){
     for(int i=1; i<n-1;i++){
         if(peak < arr[i] && arr[i] > arr[i+1]){
             peak = arr[i];
+            printf("%d",peak);
             return;
         }
     }

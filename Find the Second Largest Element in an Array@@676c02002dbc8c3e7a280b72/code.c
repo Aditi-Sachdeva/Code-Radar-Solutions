@@ -12,10 +12,10 @@ int secondLargest(int arr[], int n){
             largest = arr[i];
         }
         else if(arr[i] > second && arr[i] != largest){
-            arr[i] = second;
+            second = arr[i];
         }
     }
-    return second;
+    return second>INT_MIN?second:-1;
 }
 int main(){
     int n;

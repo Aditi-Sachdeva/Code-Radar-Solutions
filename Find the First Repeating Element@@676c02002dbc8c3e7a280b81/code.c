@@ -8,7 +8,7 @@ int firstRepeating(int arr[],int n){
             }
         }
     }
-    return 0;
+    return -1;
 }
 int main(){
     int n;

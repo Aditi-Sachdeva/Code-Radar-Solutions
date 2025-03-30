@@ -31,7 +31,7 @@ void findMinDiffPair(int arr[], int n) {
     if (diffMin < diffMax)
         printf("%d %d\n", min1, min2);
     else
-        printf("%d %d\n", max1, max1);
+        printf("%d %d\n", max2, max1);
 }
 
 int main() {

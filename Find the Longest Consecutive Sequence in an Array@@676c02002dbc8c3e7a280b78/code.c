@@ -1,5 +1,5 @@
 #include <stdio.h>
-int seq(int arr[],n){
+int seq(int arr[],int n){
     int length=0;
     for(int i=1;i<n;i++){
         if(arr[i] == (arr[i+1]+1)){

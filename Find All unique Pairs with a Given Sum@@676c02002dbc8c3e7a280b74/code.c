@@ -17,10 +17,6 @@ void findUniquePairs(int arr[], int n, int target) {
             }
         }
     }
-
-    if (!found) {
-        printf("No pairs found\n");
-    }
 }
 
 int main() {

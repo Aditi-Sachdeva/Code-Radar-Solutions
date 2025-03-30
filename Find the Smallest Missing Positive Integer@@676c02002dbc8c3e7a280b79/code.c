@@ -6,7 +6,6 @@ int missing(int arr[],int n){
     if(n==1 && arr[0] != 1){
         return 1;
     }
-    
     return n;
 }
 int main(){

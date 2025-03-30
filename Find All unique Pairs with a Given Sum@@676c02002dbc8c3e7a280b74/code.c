@@ -1,4 +1,6 @@
 #include <stdio.h>
+
+// Function to find unique pairs with a given sum
 void findPairs(int arr[], int n, int target) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = i + 1; j < n; j++) {

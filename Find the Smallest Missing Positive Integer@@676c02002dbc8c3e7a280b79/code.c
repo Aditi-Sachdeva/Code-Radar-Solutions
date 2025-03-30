@@ -1,8 +1,8 @@
 #include <stdio.h>
-int smallestMissing(int arr[], int n) {
+int smallestMissing(int nums[], int n) {
     int i=0;
         while (i<n) {
-            int correct = arr[i]-1;
+            int correct = nums[i]-1;
             if(nums[i] > 0 && nums[i] <= n && nums[i] != nums[correct]){
             int temp = nums[i];
             nums[i] = nums[correct];

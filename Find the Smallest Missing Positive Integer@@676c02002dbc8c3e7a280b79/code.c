@@ -1,15 +1,21 @@
 #include <stdio.h>
 int smallestMissing(int arr[], int n) {
-    for (int i = 0; i < n; i++) {
-        while (arr[i] > 0 && arr[i] <= n && arr[i] != arr[arr[i] - 1]) {
-            int temp = arr[i];
-            arr[i] = arr[arr[i] - 1];
-            arr[temp - 1] = temp;
+    int i=0;
+        while (i<n) {
+            int correct = arr[i]-1;
+            if(nums[i] > 0 && nums[i] <= n && nums[i] != nums[correct]){
+            int temp = nums[i];
+            nums[i] = nums[correct];
+            nums[correct] = temp;
+            }
+            else{
+                i++;
+            }
+
         }
-    }
-    for (int i = 0; i < n; i++) {
-        if (arr[i] != i + 1) {
-            return i + 1;
+    for (int idx = 0; idx < n; i++) {
+        if (nums[idx] != idx + 1) {
+            return idx + 1;
         }
     }
     return n + 1;
@@ -17,10 +23,10 @@ int smallestMissing(int arr[], int n) {
 int main(){
     int n;
     scanf("%d",&n);
-    int arr[n];
+    int nums[n];
     for(int i=0;i<n;i++){
-        scanf("%d ",&arr[i]);
+        scanf("%d ",&nums[i]);
     }
-    int ans = smallestMissing(arr,n);
+    int ans = smallestMissing(nums,n);
     printf("%d",ans);
 }

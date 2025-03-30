@@ -3,7 +3,7 @@
 
 void findMinDiffPair(int arr[], int n) {
     if (n < 2) {
-        printf("Array should have at least two elements.\n");
+        printf("-1");
         return;
     }
 

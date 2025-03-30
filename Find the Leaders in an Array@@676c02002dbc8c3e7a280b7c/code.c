@@ -1,13 +1,16 @@
 #include <stdio.h>
 
 void findLeaders(int arr[], int n) {
-    int maxFromRight = arr[n - 1];
-    printf("%d ", maxFromRight);
-
-    for (int i = n - 2; i >= 0; i--) {
-        if (arr[i] > maxFromRight) {
-            maxFromRight = arr[i];
-            printf("%d ", maxFromRight);
+    for (int i = 0; i < n; i++) {
+        int isLeader = 1;
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] < arr[j]) {
+                isLeader = 0;
+                break;
+            }
+        }
+        if (isLeader) {
+            printf("%d ", arr[i]);
         }
     }
 }

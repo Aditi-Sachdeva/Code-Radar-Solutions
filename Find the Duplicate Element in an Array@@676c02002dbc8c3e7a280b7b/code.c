@@ -2,7 +2,7 @@
 int dulpicate(int arr[],int n){
     for(int i=0;i<n;i++){
         int isDuplicate=0;
-        for(int j=1;j<=i;j++){
+        for(int j=i+1;j<n;j++){
             if(arr[i] == arr[j]){
                 isDuplicate=1;
                 return arr[i];

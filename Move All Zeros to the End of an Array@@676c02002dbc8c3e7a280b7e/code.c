@@ -7,7 +7,7 @@ void zeroesAtEnd(int arr[],int n){
         }
     }
     while(idx<n){
-        arr[idx++]0;
+        arr[idx++]=0;
     }
 }
 int main(){

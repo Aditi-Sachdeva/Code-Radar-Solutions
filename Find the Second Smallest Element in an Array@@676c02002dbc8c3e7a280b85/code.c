@@ -7,11 +7,11 @@ int secondSmallest(int arr[], int n){
     int smallest = INT_MAX;
     int second = INT_MAX;
     for(int i=0;i<n;i++){
-        if(arr[i] > smallest){
+        if(arr[i] < smallest){
             second = smallest;
             smallest = arr[i];
         }
-        else if(arr[i] > second && arr[i] != smallest){
+        else if(arr[i] < second && arr[i] != smallest){
             second = arr[i];
         }
     }

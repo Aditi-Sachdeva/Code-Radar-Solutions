@@ -16,7 +16,7 @@ int search(int arr[], int n,int target){
             low = mid +1;
         }
     }
-    return mid;
+    return result;
 }
 int main(){
     int n,target;

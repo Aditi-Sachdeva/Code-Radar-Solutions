@@ -2,10 +2,12 @@
 int search(int arr[], int n,int target){
     int low = 0;
     int high = n-1;
+    int result = -1;
     while(low<=high){
         int mid = low + (high - low)/2;
         if(arr[mid] == target){
-            return mid;
+            result = mid;
+            mid = high+1;
         }
         if(arr[mid] > target){
             high = mid -1;
@@ -14,7 +16,7 @@ int search(int arr[], int n,int target){
             low = mid +1;
         }
     }
-    return -1;
+    return mid;
 }
 int main(){
     int n,target;

@@ -18,4 +18,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    int d = dulpicate(arr,n);
+    printf("%d",d);
 }

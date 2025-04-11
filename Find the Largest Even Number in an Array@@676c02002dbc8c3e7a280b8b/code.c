@@ -1,5 +1,5 @@
 #include <stdio.h>
-int maxEven(int arr[]){
+int maxEven(int arr[],int n){
     int max =-1;
     for(int i=0;i<n;i++){
         if(arr[i]%2==0 ){
@@ -17,6 +17,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int maximum = maxEven(arr);
+    int maximum = maxEven(arr,n);
     printf("%d",maximum);
 }

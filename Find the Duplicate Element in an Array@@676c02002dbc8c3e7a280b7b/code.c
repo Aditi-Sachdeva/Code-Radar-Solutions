@@ -1,10 +1,10 @@
 #include <stdio.h>
 int dulpicate(int arr[],int n){
     for(int i=0;i<n;i++){
-        int isDuplicate=0;
+        // int isDuplicate=0;
         for(int j=i+1;j<n;j++){
             if(arr[i] == arr[j]){
-                isDuplicate=1;
+                // isDuplicate=1;
                 return arr[i];
             }
         }

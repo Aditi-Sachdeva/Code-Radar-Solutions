@@ -6,11 +6,13 @@ int median(int arr[],int n){
     }
     if(n%2==0){
         int m1 = n/2;
-        int m2 = m1+1;
-        return (arr[m1] + arr[m2])/2;
+        int m2 = m1+1;\
+        int sum = arr[m1]+arr[m2];
+        return sum/2;
     }
     return -1;
 }
+
 int main(){
     int n;
     scanf("%d",&n);

@@ -11,12 +11,12 @@ void reverseArray(int arr[], int start, int end){
 void rotateArray(int arr[],int n, int k){
     k=k%n;
     reverseArray(arr,0,k-1);
-    // reverseArray(arr,k,n-1);
-    // reverseArray(arr,0,n-1);
+    reverseArray(arr,k,n-1);
+    reverseArray(arr,0,n-1);
 }
 void printArray(int arr[],int n){
     for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
+        printf("%d",arr[i]);
     }
 }
 int main(){

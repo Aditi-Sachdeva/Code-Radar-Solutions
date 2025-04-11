@@ -4,6 +4,11 @@ int median(int arr[],int n){
         int mid = n/2;
         return arr[mid];
     }
+    else{
+        int m1 = n/2;
+        int m2 = m1+1;
+        return (arr[m1] + arr[m2])/2;
+    }
     return -1;
 }
 int main(){

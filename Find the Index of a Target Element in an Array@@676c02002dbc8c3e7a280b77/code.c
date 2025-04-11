@@ -7,7 +7,7 @@ int search(int arr[], int n,int target){
         int mid = low + (high - low)/2;
         if(arr[mid] == target){
             result = mid;
-            mid = high+1;
+            high = mid -1;
         }
         if(arr[mid] > target){
             high = mid -1;

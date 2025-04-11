@@ -9,7 +9,7 @@ int search(int arr[], int n,int target){
             result = mid;
             high = mid -1;
         }
-        if(arr[mid] > target){
+        else if(arr[mid] > target){
             high = mid -1;
         }
         else{

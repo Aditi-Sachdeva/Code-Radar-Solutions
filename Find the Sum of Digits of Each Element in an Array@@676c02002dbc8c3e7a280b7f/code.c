@@ -1,7 +1,7 @@
 #include <stdio.h>
 int sumOfDigits(int n){
     if(n<0){
-        return -1*n;
+        n -1*n;
     }
     int sum=0;
     while(n!=0){
